@@ -118,7 +118,7 @@ This project successfully delivered a comprehensive Android application for trav
 
 ## VIII. Figma
 
-[View the Figma Design File]([https://www.figma.com/design/your-design-file](https://www.figma.com/design/Mdv5Rz0UHtKcKBNvFuLz48/Travel-Planner?t=3llXJuFHvKhYcAS7-0))
+[https://www.figma.com/design/Mdv5Rz0UHtKcKBNvFuLz48/Travel-Planner?t=3llXJuFHvKhYcAS7-0]([https://www.figma.com/design/your-design-file](https://www.figma.com/design/Mdv5Rz0UHtKcKBNvFuLz48/Travel-Planner?t=3llXJuFHvKhYcAS7-0))
 
 ## IX. Demo Video
 
