@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Material Design Teal Colors -->
+    <color name="teal_200">#FF80CBC4</color>
+    <color name="teal_700">#FF00695C</color>
+    
+    <!-- Route colors for navigation -->
+    <color name="route_color">#FF1976D2</color>
+    <color name="route_color_secondary">#FF42A5F5</color>
+    <color name="highway_color">#FF4CAF50</color>
+    <color name="city_street_color">#FF2196F3</color>
+    <color name="residential_color">#FFFF9800</color>
+    
+    <!-- Optimization mode color -->
+    <color name="optimization_mode_color">#FFFF5722</color>
+</resources>

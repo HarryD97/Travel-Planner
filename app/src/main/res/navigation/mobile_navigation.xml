@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_map">
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.travel.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_itinerary"
+        android:name="com.example.travel.ui.itinerary.ItineraryFragment"
+        android:label="@string/title_itinerary"
+        tools:layout="@layout/fragment_itinerary">
+        
+        <action
+            android:id="@+id/action_navigation_itinerary_to_hotel_search_results"
+            app:destination="@id/hotel_search_results_fragment" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.travel.ui.diary.DiaryRecordFragment"
+        android:label="Record Diary"
+        tools:layout="@layout/fragment_diary_record" />
+    
+    <fragment
+        android:id="@+id/navigation_diary_view"
+        android:name="com.example.travel.ui.diary.DiaryViewFragment"
+        android:label="View Diary"
+        tools:layout="@layout/fragment_diary_view" />
+
+    <fragment
+        android:id="@+id/navigation_fitness"
+        android:name="com.example.travel.ui.fitness.FitnessFragment"
+        android:label="@string/title_fitness"
+        tools:layout="@layout/fragment_fitness" />
+
+    <fragment
+        android:id="@+id/hotel_search_results_fragment"
+        android:name="com.example.travel.ui.search.HotelSearchResultsFragment"
+        android:label="Hotel Search Results"
+        tools:layout="@layout/fragment_hotel_search_results">
+        
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+        <argument
+            android:name="locationName"
+            app:argType="string" />
+            
+    </fragment>
+
+</navigation> 

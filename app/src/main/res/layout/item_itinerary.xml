@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Drag Handle -->
+        <ImageView
+            android:id="@+id/ivDragHandle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_drag_handle_24"
+            android:contentDescription="Drag to reorder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Order Number -->
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivDragHandle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Location Name -->
+        <TextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/checkboxVisited"
+            app:layout_constraintStart_toEndOf="@+id/tvOrder"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Eiffel Tower" />
+
+        <!-- Location Address -->
+        <TextView
+            android:id="@+id/tvLocationAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?android:attr/textColorSecondary"
+            app:layout_constraintEnd_toStartOf="@+id/checkboxVisited"
+            app:layout_constraintStart_toStartOf="@+id/tvLocationName"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocationName"
+            tools:text="5 Avenue Anatole France, 75007 Paris, France" />
+
+        <!-- Planned Time -->
+        <TextView
+            android:id="@+id/tvPlannedTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="?attr/colorPrimary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/checkboxVisited"
+            app:layout_constraintStart_toStartOf="@+id/tvLocationName"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocationAddress"
+            tools:text="10:00 AM"
+            tools:visibility="visible" />
+
+        <!-- Notes -->
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/checkboxVisited"
+            app:layout_constraintStart_toStartOf="@+id/tvLocationName"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlannedTime"
+            tools:text="Don't forget to take photos!"
+            tools:visibility="visible" />
+
+        <!-- Photos Count -->
+        <TextView
+            android:id="@+id/tvPhotosCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textColor="?attr/colorSecondary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/checkboxVisited"
+            app:layout_constraintStart_toStartOf="@+id/tvLocationName"
+            app:layout_constraintTop_toBottomOf="@+id/tvNotes"
+            tools:text="3 photos"
+            tools:visibility="visible" />
+
+        <!-- Selection Checkbox (was Visited) -->
+        <CheckBox
+            android:id="@+id/checkboxVisited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Select for route planning"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete location"
+            android:src="@drawable/ic_delete_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Hotel Search Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSearchHotels"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Search Nearby Hotels"
+            app:icon="@drawable/ic_hotel_24"
+            app:iconSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/tvOrder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocationAddress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView> 

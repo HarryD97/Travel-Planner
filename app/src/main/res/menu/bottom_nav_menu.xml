@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map_24"
+        android:title="@string/title_map" />
+
+    <item
+        android:id="@+id/navigation_itinerary"
+        android:icon="@drawable/ic_list_24"
+        android:title="@string/title_itinerary" />
+
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/ic_camera_24"
+        android:title="Record Diary" />
+
+    <item
+        android:id="@+id/navigation_diary_view"
+        android:icon="@drawable/ic_photo_24"
+        android:title="View Diary" />
+
+    <item
+        android:id="@+id/navigation_fitness"
+        android:icon="@drawable/ic_fitness_24"
+        android:title="@string/title_fitness" />
+
+</menu> 

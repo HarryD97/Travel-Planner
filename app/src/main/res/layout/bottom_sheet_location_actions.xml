@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Location Info Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvLocationAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Address"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorSecondary" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddToItinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="📍 Add to Itinerary"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_add_24"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNavigateHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🧭 Navigate Here"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_navigation_24"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="ℹ️ View Details"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_info_24"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRemoveFromMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🗑️ Remove from Map"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_delete_24"
+            app:iconGravity="start" />
+
+    </LinearLayout>
+
+</LinearLayout> 

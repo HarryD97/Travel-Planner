@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvDestinationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigate to: Destination"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your preferred navigation method:"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorSecondary" />
+
+    </LinearLayout>
+
+    <!-- Internal Navigation Options -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Navigation"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDriving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🚗 Driving"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_directions_car_24"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWalking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🚶 Walking"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_directions_walk_24"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCycling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🚴 Cycling"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_directions_bike_24"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTransit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🚌 Transit"
+            android:textAlignment="textStart"
+            android:gravity="start|center_vertical"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:icon="@drawable/ic_directions_transit_24"
+            app:iconGravity="start" />
+
+    </LinearLayout>
+
+    <!-- External Navigation -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Navigation"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExternalNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗺️ Open in Google Maps"
+        android:textAlignment="textStart"
+        android:gravity="start|center_vertical"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:icon="@drawable/ic_open_in_new_24"
+        app:iconGravity="start" />
+
+</LinearLayout> 
