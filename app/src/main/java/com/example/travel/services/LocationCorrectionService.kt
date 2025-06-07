@@ -20,7 +20,7 @@ class LocationCorrectionService {
         private const val TAG = "LocationCorrectionService"
         private const val PLACES_API_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
         private const val ROADS_API_URL = "https://roads.googleapis.com/v1/snapToRoads"
-        private const val API_KEY = "AIzaSyB0c_6xBYVsuRwJKnMbbz3tBt_I0iibP8g"
+        private const val API_KEY = ""
     }
     
     private val httpClient = OkHttpClient.Builder()
