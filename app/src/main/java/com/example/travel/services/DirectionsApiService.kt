@@ -43,7 +43,7 @@ class DirectionsApiService {
     companion object {
         private const val TAG = "DirectionsApiService"
         private const val BASE_URL = "https://maps.googleapis.com/maps/api/directions/json"
-        private const val API_KEY = "AIzaSyB0c_6xBYVsuRwJKnMbbz3tBt_I0iibP8g" // From secrets.properties via gradle
+        private const val API_KEY = "" // From secrets.properties via gradle
     }
     
     private val httpClient = OkHttpClient.Builder()
